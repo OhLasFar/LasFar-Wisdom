@@ -6,14 +6,16 @@ const CONFIG = {
     role: "Everything",
     bio: "Curious af",
     email: "lasfarprofessional@gmail.com",
-    linkedin: "",
+    website: "lasfar.net",
+    twitter: "@OhLasFar",
+    youtube: "LasFar",
     github: "",
     instagram: "",
   },
   projects: [
     {
-      name: `LasFar-log`,
-      href: "https://github.com/OhLasFar/LasFar-Wisdom",
+      name: `My Website`,
+      href: "https://lasfar.net/",
     },
   ],
   // blog setting (required)
