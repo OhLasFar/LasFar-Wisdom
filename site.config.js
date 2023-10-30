@@ -6,7 +6,6 @@ const CONFIG = {
     role: "Everything",
     bio: "Curious af",
     email: "lasfarprofessional@gmail.com",
-    linkedin: "",
     github: "",
     instagram: "",
   },
