@@ -6,9 +6,11 @@ const CONFIG = {
     role: "Make it happen",
     bio: "I am an analyst and a fast learner.",
     email: "lasfarprofessional@gmail.com",
-    linkedin: "",
-    github: "OhLasFar",
     instagram: "LasFar.cs",
+    twitter: "OhLasFar",
+    youtube: "LasFar",
+    twitch: "LasFar",
+    reddit: "OhLasFar"
   },
   projects: [
     {
