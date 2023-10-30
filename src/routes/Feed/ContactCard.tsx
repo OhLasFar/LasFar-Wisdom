@@ -7,6 +7,7 @@ import {
   AiOutlineReddit,
   AiOutlineYoutube,
   BsTwitch,
+  RiKickLine,
 } from "react-icons/ai"
 import styled from "@emotion/styled"
 
@@ -76,8 +77,19 @@ const ContactCard: React.FC = () => {
     target="_blank"
     css={{ overflow: "hidden" }}
   >
-    <AiOutlineTwitch className="icon" />
+    <BsTwitch className="icon" />
     <div className="name">Twitch</div>
+  </a>
+)}
+{CONFIG.profile.kick && (
+  <a
+    href={`https://kick.com/${CONFIG.profile.kick}`}
+    rel="noreferrer"
+    target="_blank"
+    css={{ overflow: "hidden" }}
+  >
+    <RiKickLine className="icon" />
+    <div className="name">Kick</div>
   </a>
 )}
       </StyledWrapper>
