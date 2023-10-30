@@ -1,8 +1,6 @@
 import { CONFIG } from "site.config"
 import React from "react"
 import {
-  AiOutlineInstagram,
-  AiOutlineGithub,
   AiOutlineMail,
   AiOutlineTwitter,
   AiOutlineYoutube,
