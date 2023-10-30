@@ -10,7 +10,8 @@ const CONFIG = {
     twitter: "OhLasFar",
     youtube: "LasFar",
     twitch: "LasFar",
-    reddit: "OhLasFar"
+    reddit: "OhLasFar",
+    kick: "LasFar"
   },
   projects: [
     {
