@@ -26,7 +26,7 @@ const ContactCard: React.FC = () => {
           </a>
         )}
         <a
-          href="https://twitter.com/LasFar"
+          href="https://twitter.com/OhLasFar"
           rel="noreferrer"
           target="_blank"
         >
@@ -34,7 +34,7 @@ const ContactCard: React.FC = () => {
           <div className="name">Twitter</div>
         </a>
         <a
-          href="https://www.youtube.com/c/OhLasFar"
+          href="https://www.youtube.com/c/LasFar"
           rel="noreferrer"
           target="_blank"
         >
