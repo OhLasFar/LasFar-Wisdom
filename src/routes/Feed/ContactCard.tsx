@@ -4,8 +4,9 @@ import {
   AiOutlineInstagram,
   AiOutlineGithub,
   AiOutlineMail,
-  AiFillLinkedin,
-} from "react-icons/ai"
+  AiOutlineTwitter,
+  AiOutlineYoutube,
+} from "react-icons/ai"  // Importing the necessary icons for Twitter and YouTube
 import styled from "@emotion/styled"
 
 const ContactCard: React.FC = () => {
@@ -44,16 +45,22 @@ const ContactCard: React.FC = () => {
             <div className="name">email</div>
           </a>
         )}
-        {CONFIG.profile.linkedin && (
-          <a
-            href={`https://www.linkedin.com/in/${CONFIG.profile.linkedin}`}
-            rel="noreferrer"
-            target="_blank"
-          >
-            <AiFillLinkedin className="icon" />
-            <div className="name">linkedin</div>
-          </a>
-        )}
+        <a
+          href="https://twitter.com/LasFar"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <AiOutlineTwitter className="icon" />
+          <div className="name">twitter</div>
+        </a>
+        <a
+          href="https://www.youtube.com/c/LasFar"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <AiOutlineYoutube className="icon" />
+          <div className="name">youtube</div>
+        </a>
       </StyledWrapper>
     </>
   )
