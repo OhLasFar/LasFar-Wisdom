@@ -2,9 +2,11 @@ import { CONFIG } from "site.config"
 import React from "react"
 import {
   AiOutlineInstagram,
-  AiOutlineGithub,
   AiOutlineMail,
-  AiFillLinkedin,
+  AiOutlineTwitter,
+  AiOutlineReddit,
+  AiOutlineYouTube,
+  AiOutlineTwitch,
 } from "react-icons/ai"
 import styled from "@emotion/styled"
 
@@ -13,16 +15,6 @@ const ContactCard: React.FC = () => {
     <>
       <StyledTitle>💬 Contact</StyledTitle>
       <StyledWrapper>
-        {CONFIG.profile.github && (
-          <a
-            href={`https://github.com/${CONFIG.profile.github}`}
-            rel="noreferrer"
-            target="_blank"
-          >
-            <AiOutlineGithub className="icon" />
-            <div className="name">github</div>
-          </a>
-        )}
         {CONFIG.profile.instagram && (
           <a
             href={`https://www.instagram.com/${CONFIG.profile.instagram}`}
@@ -30,7 +22,7 @@ const ContactCard: React.FC = () => {
             target="_blank"
           >
             <AiOutlineInstagram className="icon" />
-            <div className="name">instagram</div>
+            <div className="name">Instagram</div>
           </a>
         )}
         {CONFIG.profile.email && (
@@ -44,16 +36,50 @@ const ContactCard: React.FC = () => {
             <div className="name">email</div>
           </a>
         )}
-        {CONFIG.profile.linkedin && (
-          <a
-            href={`https://www.linkedin.com/in/${CONFIG.profile.linkedin}`}
-            rel="noreferrer"
-            target="_blank"
-          >
-            <AiFillLinkedin className="icon" />
-            <div className="name">linkedin</div>
-          </a>
-        )}
+{CONFIG.profile.twitter && (
+  <a
+    href={`https://twitter.com/${CONFIG.profile.twitter}`}
+    rel="noreferrer"
+    target="_blank"
+    css={{ overflow: "hidden" }}
+  >
+    <AiOutlineTwitter className="icon" />
+    <div className="name">Twitter</div>
+  </a>
+)}
+{CONFIG.profile.reddit && (
+  <a
+    href={`https://reddit.com/u/${CONFIG.profile.reddit}`}
+    rel="noreferrer"
+    target="_blank"
+    css={{ overflow: "hidden" }}
+  >
+    <AiOutlineReddit className="icon" />
+    <div className="name">Reddit</div>
+  </a>
+)}
+{CONFIG.profile.youtube && (
+  <a
+    href={`https://youtube.com/channel/${CONFIG.profile.youtube}`}
+    rel="noreferrer"
+    target="_blank"
+    css={{ overflow: "hidden" }}
+  >
+    <AiOutlineYoutube className="icon" />
+    <div className="name">YouTube</div>
+  </a>
+)}
+{CONFIG.profile.twitch && (
+  <a
+    href={`https://twitch.tv/${CONFIG.profile.twitch}`}
+    rel="noreferrer"
+    target="_blank"
+    css={{ overflow: "hidden" }}
+  >
+    <AiOutlineTwitch className="icon" />
+    <div className="name">Twitch</div>
+  </a>
+)}
       </StyledWrapper>
     </>
   )
