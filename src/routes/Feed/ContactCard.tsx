@@ -1,10 +1,11 @@
 import { CONFIG } from "site.config"
 import React from "react"
 import {
+  AiOutlineInstagram,
+  AiOutlineGithub,
   AiOutlineMail,
-  AiOutlineTwitter,
-  AiOutlineYoutube,
-} from "react-icons/ai"  // Importing the necessary icons for Twitter and YouTube
+  AiFillLinkedin,
+} from "react-icons/ai"
 import styled from "@emotion/styled"
 
 const ContactCard: React.FC = () => {
@@ -12,22 +13,47 @@ const ContactCard: React.FC = () => {
     <>
       <StyledTitle>💬 Contact</StyledTitle>
       <StyledWrapper>
-        <a
-          href="https://twitter.com/OhLasFar"
-          rel="noreferrer"
-          target="_blank"
-        >
-          <AiOutlineTwitter className="icon" />
-          <div className="name">Twitter</div>
-        </a>
-        <a
-          href="https://www.youtube.com/c/LasFar"
-          rel="noreferrer"
-          target="_blank"
-        >
-          <AiOutlineYoutube className="icon" />
-          <div className="name">Youtube</div>
-        </a>
+        {CONFIG.profile.github && (
+          <a
+            href={`https://github.com/${CONFIG.profile.github}`}
+            rel="noreferrer"
+            target="_blank"
+          >
+            <AiOutlineGithub className="icon" />
+            <div className="name">github</div>
+          </a>
+        )}
+        {CONFIG.profile.instagram && (
+          <a
+            href={`https://www.instagram.com/${CONFIG.profile.instagram}`}
+            rel="noreferrer"
+            target="_blank"
+          >
+            <AiOutlineInstagram className="icon" />
+            <div className="name">instagram</div>
+          </a>
+        )}
+        {CONFIG.profile.email && (
+          <a
+            href={`mailto:${CONFIG.profile.email}`}
+            rel="noreferrer"
+            target="_blank"
+            css={{ overflow: "hidden" }}
+          >
+            <AiOutlineMail className="icon" />
+            <div className="name">email</div>
+          </a>
+        )}
+        {CONFIG.profile.linkedin && (
+          <a
+            href={`https://www.linkedin.com/in/${CONFIG.profile.linkedin}`}
+            rel="noreferrer"
+            target="_blank"
+          >
+            <AiFillLinkedin className="icon" />
+            <div className="name">linkedin</div>
+          </a>
+        )}
       </StyledWrapper>
     </>
   )
