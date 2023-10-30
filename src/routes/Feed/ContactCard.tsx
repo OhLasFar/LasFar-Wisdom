@@ -6,7 +6,7 @@ import {
   AiOutlineTwitter,
   AiOutlineReddit,
   AiOutlineYoutube,
-  AiOutlineTwitch,
+  AiOutlineBsTwitch,
 } from "react-icons/ai"
 import styled from "@emotion/styled"
 
