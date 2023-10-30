@@ -14,35 +14,15 @@ const ContactCard: React.FC = () => {
     <>
       <StyledTitle>💬 Contact</StyledTitle>
       <StyledWrapper>
-        {CONFIG.profile.github && (
-          <a
-            href={`https://github.com/${CONFIG.profile.github}`}
-            rel="noreferrer"
-            target="_blank"
-          >
-            <AiOutlineGithub className="icon" />
-            <div className="name">github</div>
-          </a>
-        )}
-        {CONFIG.profile.instagram && (
-          <a
-            href={`https://www.instagram.com/${CONFIG.profile.instagram}`}
-            rel="noreferrer"
-            target="_blank"
-          >
-            <AiOutlineInstagram className="icon" />
-            <div className="name">instagram</div>
-          </a>
-        )}
         {CONFIG.profile.email && (
           <a
-            href={`mailto:${CONFIG.profile.email}`}
+            href={`mailto:lasfarprofessional@gmail.com`}
             rel="noreferrer"
             target="_blank"
             css={{ overflow: "hidden" }}
           >
             <AiOutlineMail className="icon" />
-            <div className="name">email</div>
+            <div className="name">Email</div>
           </a>
         )}
         <a
@@ -51,15 +31,15 @@ const ContactCard: React.FC = () => {
           target="_blank"
         >
           <AiOutlineTwitter className="icon" />
-          <div className="name">twitter</div>
+          <div className="name">Twitter</div>
         </a>
         <a
-          href="https://www.youtube.com/c/LasFar"
+          href="https://www.youtube.com/c/OhLasFar"
           rel="noreferrer"
           target="_blank"
         >
           <AiOutlineYoutube className="icon" />
-          <div className="name">youtube</div>
+          <div className="name">Youtube</div>
         </a>
       </StyledWrapper>
     </>
