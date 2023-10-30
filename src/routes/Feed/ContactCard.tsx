@@ -12,17 +12,6 @@ const ContactCard: React.FC = () => {
     <>
       <StyledTitle>💬 Contact</StyledTitle>
       <StyledWrapper>
-        {CONFIG.profile.email && (
-          <a
-            href={`mailto:lasfarprofessional@gmail.com`}
-            rel="noreferrer"
-            target="_blank"
-            css={{ overflow: "hidden" }}
-          >
-            <AiOutlineMail className="icon" />
-            <div className="name">Email</div>
-          </a>
-        )}
         <a
           href="https://twitter.com/OhLasFar"
           rel="noreferrer"
