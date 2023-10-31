@@ -9,6 +9,12 @@ import {
   BsTwitch,
   RiKickLine,
 } from "react-icons/ai"
+import {
+  RiKickLine,
+} from "react-icons/bs"
+import {
+  RiKickLine,
+} from "react-icons/ri"
 import styled from "@emotion/styled"
 
 const ContactCard: React.FC = () => {
