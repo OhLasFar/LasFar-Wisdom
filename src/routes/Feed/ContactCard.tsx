@@ -20,27 +20,6 @@ const ContactCard: React.FC = () => {
     <>
       <StyledTitle>💬 Contact</StyledTitle>
       <StyledWrapper>
-        {CONFIG.profile.instagram && (
-          <a
-            href={`https://www.instagram.com/${CONFIG.profile.instagram}`}
-            rel="noreferrer"
-            target="_blank"
-          >
-            <AiOutlineInstagram className="icon" />
-            <div className="name">Instagram</div>
-          </a>
-        )}
-        {CONFIG.profile.email && (
-          <a
-            href={`mailto:${CONFIG.profile.email}`}
-            rel="noreferrer"
-            target="_blank"
-            css={{ overflow: "hidden" }}
-          >
-            <AiOutlineMail className="icon" />
-            <div className="name">email</div>
-          </a>
-        )}
 {CONFIG.profile.twitter && (
   <a
     href={`https://twitter.com/${CONFIG.profile.twitter}`}
@@ -52,15 +31,15 @@ const ContactCard: React.FC = () => {
     <div className="name">Twitter</div>
   </a>
 )}
-{CONFIG.profile.reddit && (
+{CONFIG.profile.kick && (
   <a
-    href={`https://reddit.com/u/${CONFIG.profile.reddit}`}
+    href={`https://kick.com/${CONFIG.profile.kick}`}
     rel="noreferrer"
     target="_blank"
     css={{ overflow: "hidden" }}
   >
-    <AiOutlineReddit className="icon" />
-    <div className="name">Reddit</div>
+    <RiMicLine className="icon" />
+    <div className="name">Kick</div>
   </a>
 )}
 {CONFIG.profile.youtube && (
@@ -85,17 +64,38 @@ const ContactCard: React.FC = () => {
     <div className="name">Twitch</div>
   </a>
 )}
-{CONFIG.profile.kick && (
+{CONFIG.profile.reddit && (
   <a
-    href={`https://kick.com/${CONFIG.profile.kick}`}
+    href={`https://reddit.com/u/${CONFIG.profile.reddit}`}
     rel="noreferrer"
     target="_blank"
     css={{ overflow: "hidden" }}
   >
-    <RiMicLine className="icon" />
-    <div className="name">Kick</div>
+    <AiOutlineReddit className="icon" />
+    <div className="name">Reddit</div>
   </a>
 )}
+        {CONFIG.profile.instagram && (
+          <a
+            href={`https://www.instagram.com/${CONFIG.profile.instagram}`}
+            rel="noreferrer"
+            target="_blank"
+          >
+            <AiOutlineInstagram className="icon" />
+            <div className="name">Instagram</div>
+          </a>
+        )}
+        {CONFIG.profile.email && (
+          <a
+            href={`mailto:${CONFIG.profile.email}`}
+            rel="noreferrer"
+            target="_blank"
+            css={{ overflow: "hidden" }}
+          >
+            <AiOutlineMail className="icon" />
+            <div className="name">Email</div>
+          </a>
+        )}
       </StyledWrapper>
     </>
   )
