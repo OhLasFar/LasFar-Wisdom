@@ -13,12 +13,6 @@ const CONFIG = {
     reddit: "OhLasFar",
     kick: "LasFar"
   },
-  projects: [
-    {
-      name: `My Website`,
-      href: "https://lasfar.net/",
-    },
-  ],
   // blog setting (required)
   blog: {
     title: "LasFar",
