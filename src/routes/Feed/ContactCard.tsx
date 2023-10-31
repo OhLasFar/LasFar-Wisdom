@@ -6,7 +6,6 @@ import {
   AiOutlineTwitter,
   AiOutlineReddit,
   AiOutlineYoutube,
-  RiKickLine,
 } from "react-icons/ai"
 import {
   BsTwitch,
