@@ -11,7 +11,7 @@ import {
   BsTwitch,
 } from "react-icons/bs"
 import {
-  RiKickLine,
+  RiMicLine,
 } from "react-icons/ri"
 import styled from "@emotion/styled"
 
@@ -92,7 +92,7 @@ const ContactCard: React.FC = () => {
     target="_blank"
     css={{ overflow: "hidden" }}
   >
-    <RiKickLine className="icon" />
+    <RiMicLine className="icon" />
     <div className="name">Kick</div>
   </a>
 )}
