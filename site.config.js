@@ -15,8 +15,8 @@ const CONFIG = {
   },
   // blog setting (required)
   blog: {
-    title: "LasFar",
-    description: "welcome to LasFar wisdom!",
+    title: "LasFar Wisdom",
+    description: "Welcome to LasFar Wisdom! Here, I share all the cool things I learn – from gaming setups and streaming tips to networking guides and more. If you love to learn and explore, you're in the right place!",
   },
 
   // CONFIG configration (required)
